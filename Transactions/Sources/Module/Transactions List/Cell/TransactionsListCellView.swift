@@ -90,8 +90,8 @@ final class TransactionListViewCell: UITableViewCell {
         contentView.addSubview(wrap)
         
         NSLayoutConstraint.activate([
-            wrap.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 5),
-            wrap.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5),
+            wrap.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            wrap.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             wrap.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -5),
             wrap.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5)
         ])

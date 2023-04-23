@@ -13,9 +13,9 @@ extension UITableView {
         translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             topAnchor.constraint(equalTo: parentView.safeAreaLayoutGuide.topAnchor, constant: BackbaseUI.shared.spacers.md),
-            leadingAnchor.constraint(equalTo: parentView.leadingAnchor, constant: BackbaseUI.shared.spacers.md),
-            trailingAnchor.constraint(equalTo: parentView.trailingAnchor, constant: -BackbaseUI.shared.spacers.md),
-            bottomAnchor.constraint(equalTo: parentView.bottomAnchor, constant: -BackbaseUI.shared.spacers.md)
+            leadingAnchor.constraint(equalTo: parentView.leadingAnchor),
+            trailingAnchor.constraint(equalTo: parentView.trailingAnchor),
+            bottomAnchor.constraint(equalTo: parentView.bottomAnchor)
         ])
     }
 }

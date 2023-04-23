@@ -70,7 +70,7 @@ final class TransactionsListViewController: UIViewController {
     
     private func setupUI() {
         title = NSLocalizedString("transactions.list.title", comment: "")
-        view.backgroundColor = BackbaseUI.shared.colors.foundation
+        view.backgroundColor = BackbaseUI.shared.colors.primary
         setupTableView()
         setupEmptyLabel()
         setupErrorLabel()
@@ -83,7 +83,7 @@ final class TransactionsListViewController: UIViewController {
             TransactionListViewCell.self,
             forCellReuseIdentifier: TransactionListViewCell.reuseIdentifier
         )
-        tableView.backgroundColor = .clear
+        tableView.backgroundColor = BackbaseUI.shared.colors.foundation
         tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
         tableView.delegate = self
