@@ -18,6 +18,25 @@
 		1E89223E29F57DA60078254D /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89223D29F57DA60078254D /* TransactionType.swift */; };
 		1E89224029F57DBE0078254D /* CurrencyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89223F29F57DBE0078254D /* CurrencyType.swift */; };
 		1E89224229F57F030078254D /* DateFormatParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89224129F57F030078254D /* DateFormatParser.swift */; };
+		1E89224429F580D00078254D /* TransactionsProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89224329F580D00078254D /* TransactionsProcessor.swift */; };
+		1E89224729F583E90078254D /* TransactionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89224629F583E90078254D /* TransactionsListViewModel.swift */; };
+		1E89224929F585BE0078254D /* Date+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89224829F585BE0078254D /* Date+toString.swift */; };
+		1E89224B29F586450078254D /* TransactionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89224A29F586450078254D /* TransactionsListViewController.swift */; };
+		1E89224D29F586E10078254D /* TransactionsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89224C29F586E10078254D /* TransactionsListCoordinator.swift */; };
+		1E89225029F5893F0078254D /* TransactionsListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89224F29F5893F0078254D /* TransactionsListCellView.swift */; };
+		1E89225229F58A9B0078254D /* TransactionsDataSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89225129F58A9B0078254D /* TransactionsDataSourceProvider.swift */; };
+		1E89225429F597720078254D /* UItableView+constraintsToFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89225329F597720078254D /* UItableView+constraintsToFit.swift */; };
+		1E89225729F59A420078254D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E89225629F59A420078254D /* Localizable.strings */; };
+		1E89225B29F5A2530078254D /* TransactionsListStateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89225A29F5A2530078254D /* TransactionsListStateHandler.swift */; };
+		1E89225D29F5A2840078254D /* TransactionsListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89225C29F5A2840078254D /* TransactionsListState.swift */; };
+		1E89225F29F5A2D50078254D /* CollectedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89225E29F5A2D50078254D /* CollectedState.swift */; };
+		1E89226129F5A2EB0078254D /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89226029F5A2EB0078254D /* LoadingState.swift */; };
+		1E89226329F5A2FF0078254D /* ErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89226229F5A2FF0078254D /* ErrorState.swift */; };
+		1E89226529F5A30F0078254D /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89226429F5A30F0078254D /* EmptyState.swift */; };
+		1E89226A29F5A6C60078254D /* TransactionsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89226929F5A6C60078254D /* TransactionsRepositoryMock.swift */; };
+		1E89226C29F5A6EB0078254D /* TransactionsProcessorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89226B29F5A6EB0078254D /* TransactionsProcessorMock.swift */; };
+		1E89226E29F5A70E0078254D /* TransactionsProcessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89226D29F5A70E0078254D /* TransactionsProcessorTests.swift */; };
+		1E89227029F5A7230078254D /* TransactionsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89226F29F5A7230078254D /* TransactionsListViewModelTests.swift */; };
 		2817D60529C4C54C001D8307 /* BackbaseNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2817D60429C4C54C001D8307 /* BackbaseNetworking.xcframework */; };
 		2817D60629C4C54C001D8307 /* BackbaseNetworking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2817D60429C4C54C001D8307 /* BackbaseNetworking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28257F6B295DC3AF008A886B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28257F6A295DC3AF008A886B /* AppDelegate.swift */; };
@@ -74,6 +93,25 @@
 		1E89223D29F57DA60078254D /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
 		1E89223F29F57DBE0078254D /* CurrencyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyType.swift; sourceTree = "<group>"; };
 		1E89224129F57F030078254D /* DateFormatParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatParser.swift; sourceTree = "<group>"; };
+		1E89224329F580D00078254D /* TransactionsProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsProcessor.swift; sourceTree = "<group>"; };
+		1E89224629F583E90078254D /* TransactionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewModel.swift; sourceTree = "<group>"; };
+		1E89224829F585BE0078254D /* Date+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+toString.swift"; sourceTree = "<group>"; };
+		1E89224A29F586450078254D /* TransactionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewController.swift; sourceTree = "<group>"; };
+		1E89224C29F586E10078254D /* TransactionsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListCoordinator.swift; sourceTree = "<group>"; };
+		1E89224F29F5893F0078254D /* TransactionsListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListCellView.swift; sourceTree = "<group>"; };
+		1E89225129F58A9B0078254D /* TransactionsDataSourceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsDataSourceProvider.swift; sourceTree = "<group>"; };
+		1E89225329F597720078254D /* UItableView+constraintsToFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UItableView+constraintsToFit.swift"; sourceTree = "<group>"; };
+		1E89225629F59A420078254D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1E89225A29F5A2530078254D /* TransactionsListStateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListStateHandler.swift; sourceTree = "<group>"; };
+		1E89225C29F5A2840078254D /* TransactionsListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListState.swift; sourceTree = "<group>"; };
+		1E89225E29F5A2D50078254D /* CollectedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectedState.swift; sourceTree = "<group>"; };
+		1E89226029F5A2EB0078254D /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		1E89226229F5A2FF0078254D /* ErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorState.swift; sourceTree = "<group>"; };
+		1E89226429F5A30F0078254D /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		1E89226929F5A6C60078254D /* TransactionsRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRepositoryMock.swift; sourceTree = "<group>"; };
+		1E89226B29F5A6EB0078254D /* TransactionsProcessorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsProcessorMock.swift; sourceTree = "<group>"; };
+		1E89226D29F5A70E0078254D /* TransactionsProcessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsProcessorTests.swift; sourceTree = "<group>"; };
+		1E89226F29F5A7230078254D /* TransactionsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewModelTests.swift; sourceTree = "<group>"; };
 		2817D60429C4C54C001D8307 /* BackbaseNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BackbaseNetworking.xcframework; path = BackbaseNetworking/BackbaseNetworking.xcframework; sourceTree = "<group>"; };
 		28257F67295DC3AF008A886B /* Transactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28257F6A295DC3AF008A886B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,16 +153,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E89221F29F5784C0078254D /* Sources */ = {
+		1E89221F29F5784C0078254D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				28257F78295DC3B0008A886B /* Info.plist */,
 				28257F73295DC3B0008A886B /* Assets.xcassets */,
+				1E89225529F59A340078254D /* Localizations */,
 			);
-			path = Sources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		1E89222029F5785D0078254D /* Resources */ = {
+		1E89222029F5785D0078254D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				1E89222229F5789C0078254D /* App */,
@@ -134,7 +173,7 @@
 				1E89223129F57C5D0078254D /* Service */,
 				1E89222429F579450078254D /* Util */,
 			);
-			path = Resources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		1E89222229F5789C0078254D /* App */ = {
@@ -150,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				1E89222B29F57AA60078254D /* ReuseIdentifiable.swift */,
+				1E89224829F585BE0078254D /* Date+toString.swift */,
+				1E89225329F597720078254D /* UItableView+constraintsToFit.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -176,6 +217,7 @@
 		1E89222629F579500078254D /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				1E89224529F583A90078254D /* Transactions List */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -192,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				1E89223329F57C7A0078254D /* TransactionsRepository.swift */,
+				1E89224329F580D00078254D /* TransactionsProcessor.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -214,6 +257,74 @@
 				1E89223929F57D300078254D /* TransactionDTO.swift */,
 			);
 			path = Transaction;
+			sourceTree = "<group>";
+		};
+		1E89224529F583A90078254D /* Transactions List */ = {
+			isa = PBXGroup;
+			children = (
+				1E89225129F58A9B0078254D /* TransactionsDataSourceProvider.swift */,
+				1E89224C29F586E10078254D /* TransactionsListCoordinator.swift */,
+				1E89224A29F586450078254D /* TransactionsListViewController.swift */,
+				1E89224629F583E90078254D /* TransactionsListViewModel.swift */,
+				1E89224E29F5892A0078254D /* Cell */,
+				1E89225829F5A2290078254D /* State Handler */,
+			);
+			path = "Transactions List";
+			sourceTree = "<group>";
+		};
+		1E89224E29F5892A0078254D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1E89224F29F5893F0078254D /* TransactionsListCellView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1E89225529F59A340078254D /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				1E89225629F59A420078254D /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		1E89225829F5A2290078254D /* State Handler */ = {
+			isa = PBXGroup;
+			children = (
+				1E89225A29F5A2530078254D /* TransactionsListStateHandler.swift */,
+				1E89225929F5A2470078254D /* State */,
+			);
+			path = "State Handler";
+			sourceTree = "<group>";
+		};
+		1E89225929F5A2470078254D /* State */ = {
+			isa = PBXGroup;
+			children = (
+				1E89225C29F5A2840078254D /* TransactionsListState.swift */,
+				1E89225E29F5A2D50078254D /* CollectedState.swift */,
+				1E89226029F5A2EB0078254D /* LoadingState.swift */,
+				1E89226229F5A2FF0078254D /* ErrorState.swift */,
+				1E89226429F5A30F0078254D /* EmptyState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		1E89226629F5A6840078254D /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				1E89226929F5A6C60078254D /* TransactionsRepositoryMock.swift */,
+				1E89226B29F5A6EB0078254D /* TransactionsProcessorMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		1E89226729F5A6880078254D /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				1E89226F29F5A7230078254D /* TransactionsListViewModelTests.swift */,
+				1E89226D29F5A70E0078254D /* TransactionsProcessorTests.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		28257F5E295DC3AF008A886B = {
@@ -241,8 +352,8 @@
 		28257F69295DC3AF008A886B /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
-				1E89222029F5785D0078254D /* Resources */,
-				1E89221F29F5784C0078254D /* Sources */,
+				1E89222029F5785D0078254D /* Sources */,
+				1E89221F29F5784C0078254D /* Resources */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -250,6 +361,8 @@
 		28257F80295DC3B0008A886B /* TransactionsTests */ = {
 			isa = PBXGroup;
 			children = (
+				1E89226629F5A6840078254D /* Mock */,
+				1E89226729F5A6880078254D /* Test */,
 			);
 			path = TransactionsTests;
 			sourceTree = "<group>";
@@ -344,6 +457,7 @@
 					};
 					28257F7C295DC3B0008A886B = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1410;
 						TestTargetID = 28257F66295DC3AF008A886B;
 					};
 					28257F86295DC3B0008A886B = {
@@ -378,6 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28257F77295DC3B0008A886B /* LaunchScreen.storyboard in Resources */,
+				1E89225729F59A420078254D /* Localizable.strings in Resources */,
 				28257F74295DC3B0008A886B /* Assets.xcassets in Resources */,
 				28ED80B6295DDDE300AB525C /* README.md in Resources */,
 			);
@@ -404,18 +519,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E89225D29F5A2840078254D /* TransactionsListState.swift in Sources */,
+				1E89224929F585BE0078254D /* Date+toString.swift in Sources */,
 				1E89223029F57C260078254D /* TransactionResponse.swift in Sources */,
+				1E89226529F5A30F0078254D /* EmptyState.swift in Sources */,
+				1E89224729F583E90078254D /* TransactionsListViewModel.swift in Sources */,
+				1E89225029F5893F0078254D /* TransactionsListCellView.swift in Sources */,
+				1E89225B29F5A2530078254D /* TransactionsListStateHandler.swift in Sources */,
+				1E89224B29F586450078254D /* TransactionsListViewController.swift in Sources */,
 				28257F6B295DC3AF008A886B /* AppDelegate.swift in Sources */,
 				1E89223729F57CF80078254D /* UserType.swift in Sources */,
 				1E89223429F57C7A0078254D /* TransactionsRepository.swift in Sources */,
+				1E89225229F58A9B0078254D /* TransactionsDataSourceProvider.swift in Sources */,
 				1E89223A29F57D300078254D /* TransactionDTO.swift in Sources */,
+				1E89226129F5A2EB0078254D /* LoadingState.swift in Sources */,
 				1E89224229F57F030078254D /* DateFormatParser.swift in Sources */,
 				1E89223C29F57D810078254D /* SectionType.swift in Sources */,
+				1E89226329F5A2FF0078254D /* ErrorState.swift in Sources */,
+				1E89224D29F586E10078254D /* TransactionsListCoordinator.swift in Sources */,
 				1E89223E29F57DA60078254D /* TransactionType.swift in Sources */,
+				1E89225F29F5A2D50078254D /* CollectedState.swift in Sources */,
+				1E89224429F580D00078254D /* TransactionsProcessor.swift in Sources */,
 				1E89222829F579AB0078254D /* MainCoordinator.swift in Sources */,
 				1E89224029F57DBE0078254D /* CurrencyType.swift in Sources */,
 				1E89222D29F57AA60078254D /* ReuseIdentifiable.swift in Sources */,
 				1E89222A29F57A420078254D /* ImageProvider.swift in Sources */,
+				1E89225429F597720078254D /* UItableView+constraintsToFit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +552,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E89226A29F5A6C60078254D /* TransactionsRepositoryMock.swift in Sources */,
+				1E89226E29F5A70E0078254D /* TransactionsProcessorTests.swift in Sources */,
+				1E89226C29F5A6EB0078254D /* TransactionsProcessorMock.swift in Sources */,
+				1E89227029F5A7230078254D /* TransactionsListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,14 +770,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.backbase.homeAssignment.TransactionsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transactions.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Transactions";
@@ -656,14 +797,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.backbase.homeAssignment.TransactionsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transactions.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Transactions";
