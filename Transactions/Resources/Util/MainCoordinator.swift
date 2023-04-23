@@ -39,6 +39,11 @@ final class MainCoordinator: Coordinator {
     func start() {
         guard let window else { return }
         
+        let coordinator = TransactionsListCoordinator(navigationController)
+        
+        childCoordinators.append(coordinator)
+        coordinator.start()
+        
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
