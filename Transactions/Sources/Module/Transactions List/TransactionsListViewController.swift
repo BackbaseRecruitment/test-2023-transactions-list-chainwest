@@ -58,6 +58,12 @@ final class TransactionsListViewController: UIViewController {
                 )
             }
             .store(in: &cancellables)
+        
+        viewModel.$state
+            .sink { [weak self] state in
+                self?.handleState(state)
+            }
+            .store(in: &cancellables)
     }
     
     // MARK: - Setup

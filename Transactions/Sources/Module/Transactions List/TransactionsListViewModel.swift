@@ -16,6 +16,7 @@ final class TransactionsListViewModel: ObservableObject {
     private let repository: TransactionsRepository
     private let transactionProcessor: TransactionsProcessor
     
+    @Published private(set) var state: TransactionsListState = LoadingState()
     @Published private(set) var transactions = [TransactionDTO]()
     
     private var cancellables = Set<AnyCancellable>()
@@ -30,10 +31,21 @@ final class TransactionsListViewModel: ObservableObject {
     }
     
     private func getTransactionsData() {
+        state = LoadingState()
         handleTransactions()
             .receive(on: DispatchQueue.main)
-            .replaceError(with: [])
-            .assign(to: &$transactions)
+            .sink(receiveCompletion: { [weak self] completion in
+                guard let self else { return }
+                switch completion {
+                case .failure(let error):
+                    self.state = ErrorState(error: error)
+                case .finished:
+                    self.state = self.transactions.isEmpty ? EmptyState() : CollectedState()
+                }
+            }, receiveValue: { [weak self] transactions in
+                self?.transactions = transactions
+            })
+            .store(in: &cancellables)
     }
     
     private func handleTransactions() -> AnyPublisher<[TransactionDTO], TransactionsRepositoryError> {
