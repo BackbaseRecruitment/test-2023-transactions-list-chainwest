@@ -17,6 +17,7 @@
 		1E89223C29F57D810078254D /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89223B29F57D810078254D /* SectionType.swift */; };
 		1E89223E29F57DA60078254D /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89223D29F57DA60078254D /* TransactionType.swift */; };
 		1E89224029F57DBE0078254D /* CurrencyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89223F29F57DBE0078254D /* CurrencyType.swift */; };
+		1E89224229F57F030078254D /* DateFormatParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89224129F57F030078254D /* DateFormatParser.swift */; };
 		2817D60529C4C54C001D8307 /* BackbaseNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2817D60429C4C54C001D8307 /* BackbaseNetworking.xcframework */; };
 		2817D60629C4C54C001D8307 /* BackbaseNetworking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2817D60429C4C54C001D8307 /* BackbaseNetworking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28257F6B295DC3AF008A886B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28257F6A295DC3AF008A886B /* AppDelegate.swift */; };
@@ -72,6 +73,7 @@
 		1E89223B29F57D810078254D /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
 		1E89223D29F57DA60078254D /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
 		1E89223F29F57DBE0078254D /* CurrencyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyType.swift; sourceTree = "<group>"; };
+		1E89224129F57F030078254D /* DateFormatParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatParser.swift; sourceTree = "<group>"; };
 		2817D60429C4C54C001D8307 /* BackbaseNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BackbaseNetworking.xcframework; path = BackbaseNetworking/BackbaseNetworking.xcframework; sourceTree = "<group>"; };
 		28257F67295DC3AF008A886B /* Transactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28257F6A295DC3AF008A886B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		1E89222429F579450078254D /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				1E89224129F57F030078254D /* DateFormatParser.swift */,
 				1E89222929F57A420078254D /* ImageProvider.swift */,
 				1E89222729F579AB0078254D /* MainCoordinator.swift */,
 			);
@@ -406,6 +409,7 @@
 				1E89223729F57CF80078254D /* UserType.swift in Sources */,
 				1E89223429F57C7A0078254D /* TransactionsRepository.swift in Sources */,
 				1E89223A29F57D300078254D /* TransactionDTO.swift in Sources */,
+				1E89224229F57F030078254D /* DateFormatParser.swift in Sources */,
 				1E89223C29F57D810078254D /* SectionType.swift in Sources */,
 				1E89223E29F57DA60078254D /* TransactionType.swift in Sources */,
 				1E89222829F579AB0078254D /* MainCoordinator.swift in Sources */,

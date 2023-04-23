@@ -15,3 +15,14 @@ struct TransactionDTO: Hashable {
     let creationTime: Date
     let section: SectionType
 }
+
+extension TransactionDTO {
+    init(with response: TransactionResponse) {
+        description = Array(arrayLiteral: response.description)
+        amount = Double(response.transactionAmountCurrency.amount) ?? 0.0
+        currencyCode = CurrencyType(rawValue: response.transactionAmountCurrency.currencyCode) ?? .euro
+        creditDebitIndicator = TransactionType(rawValue: response.creditDebitIndicator) ?? .credit
+        creationTime = DateFormatParser.parseDate(from: response.creationTime)
+        section = SectionType(rawValue: response.state) ?? .pending
+    }
+}
