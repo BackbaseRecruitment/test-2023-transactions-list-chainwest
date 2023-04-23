@@ -5,7 +5,8 @@
 //  Created by Евгений Урбановский on 4/23/23.
 //
 
-import Foundation
+import UIKit
+import BackbaseMDS
 
 struct TransactionDTO: Hashable {
     let description: [String]
@@ -14,6 +15,31 @@ struct TransactionDTO: Hashable {
     let creditDebitIndicator: TransactionType
     let creationTime: Date
     let section: SectionType
+    
+    var transactionTypeImage: UIImage {
+        creditDebitIndicator == .debit ? ImageProvider.creditTransaction : ImageProvider.debitTransaction
+    }
+    
+    var totalCost: String {
+        "\(creditDebitIndicator.operationSign)\(currencyCode.sign)\(amount)"
+    }
+    
+    var totalCostTextColor: UIColor {
+        switch creditDebitIndicator {
+        case .credit:
+            return BackbaseUI.shared.colors.success
+        case .debit:
+            return BackbaseUI.shared.colors.textDefault
+        }
+    }
+    
+    var transactions: String {
+        description.joined(separator: "\n")
+    }
+    
+    var date: String {
+        creationTime.toString()
+    }
 }
 
 extension TransactionDTO {
