@@ -14,15 +14,18 @@ final class TransactionsListViewModel: ObservableObject {
     // MARK: - Properties
     
     private let repository: TransactionsRepository
+    private let transactionProcessor: TransactionsProcessor
     
     @Published private(set) var transactions = [TransactionDTO]()
     
     private var cancellables = Set<AnyCancellable>()
     
     init(
-        repository: TransactionsRepository = TransactionsRepositoryImpl()
+        repository: TransactionsRepository = TransactionsRepositoryImpl(),
+        transactionProcessor: TransactionsProcessor = TransactionsProcessorImpl()
     ) {
         self.repository = repository
+        self.transactionProcessor = transactionProcessor
         getTransactionsData()
     }
     
@@ -35,11 +38,7 @@ final class TransactionsListViewModel: ObservableObject {
     
     private func handleTransactions() -> AnyPublisher<[TransactionDTO], TransactionsRepositoryError> {
         repository.getTransactions(for: .withGroupedPendingAndCompletedTransactions)
-            .map(handleTransactions)
+            .map(transactionProcessor.processTransactions)
             .eraseToAnyPublisher()
-    }
-    
-    private func handleTransactions(_ transactions: [TransactionDTO]) -> [TransactionDTO] {
-        []
     }
 }
