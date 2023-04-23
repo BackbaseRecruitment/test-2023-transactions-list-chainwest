@@ -22,10 +22,10 @@ final class TransactionsListViewController: UIViewController {
     
     // MARK: - UI
     
-    private let tableView = UITableView()
-    private let emptyLabel = UILabel()
-    private let errorLabel = UILabel()
-    private let loadingView = UIActivityIndicatorView(style: .large)
+    let tableView = UITableView()
+    let emptyLabel = UILabel()
+    let errorLabel = UILabel()
+    let loadingView = UIActivityIndicatorView(style: .large)
     
     // MARK: - Init
     
@@ -65,6 +65,10 @@ final class TransactionsListViewController: UIViewController {
     private func setupUI() {
         title = NSLocalizedString("transactions.list.title", comment: "")
         view.backgroundColor = BackbaseUI.shared.colors.foundation
+        setupTableView()
+        setupEmptyLabel()
+        setupErrorLabel()
+        setupLoadingView()
     }
     
     private func setupTableView() {
@@ -79,6 +83,50 @@ final class TransactionsListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = dataSource
         tableView.constraintsToFit(in: view)
+    }
+    
+    private func setupEmptyLabel() {
+        view.addSubview(emptyLabel)
+        emptyLabel.translatesAutoresizingMaskIntoConstraints = false
+        emptyLabel.text = NSLocalizedString("transactions.list.empty", comment: "")
+        emptyLabel.textAlignment = .center
+        emptyLabel.numberOfLines = 0
+        emptyLabel.font = BackbaseUI.shared.fonts.preferredFont(.body, .semibold)
+        NSLayoutConstraint.activate([
+            emptyLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            emptyLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            emptyLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
+    
+    private func setupErrorLabel() {
+        view.addSubview(errorLabel)
+        errorLabel.translatesAutoresizingMaskIntoConstraints = false
+        errorLabel.textAlignment = .center
+        errorLabel.numberOfLines = 0
+        errorLabel.font = BackbaseUI.shared.fonts.preferredFont(.body, .semibold)
+        NSLayoutConstraint.activate([
+            errorLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            errorLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            errorLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
+    
+    private func setupLoadingView() {
+        view.addSubview(loadingView)
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
+}
+
+// MARK: - TransactionsListStateHandler
+
+extension TransactionsListViewController: TransactionListStateHandler {
+    func handleState(_ state: TransactionsListState) {
+        state.configureUI(in: self)
     }
 }
 
